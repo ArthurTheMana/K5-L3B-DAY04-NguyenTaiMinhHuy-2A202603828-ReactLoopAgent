@@ -7,3 +7,10 @@ eval_results*.json
 /agent_cp3_baseline.py
 /eval_before_backup.json
 /eval_before_openrouter_incomplete.json
+# Local bonus evaluation backups
+/eval_bonus_first_run.json
+/eval_bonus_before_security_fix.json
+/bonus_b7_fixed.json
+/bonus_b10_retry.json
+/agent_before_bonus.py
+/agent_bonus_13_66.py
