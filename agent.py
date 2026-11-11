@@ -14,7 +14,7 @@ def run_agent(question, provider, tools, max_steps=6):
     """Trả dict: status, answer, trace, usage. Contract chi tiết trong GUIDE.md."""
     # Step 3A
     messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "system", "content": getattr(tools, "system_prompt", SYSTEM_PROMPT)},
         {"role": "user", "content": question }
     ]
 
@@ -26,7 +26,7 @@ def run_agent(question, provider, tools, max_steps=6):
     for step in range(max_steps):
         response = provider.complete(
             messages=messages,
-            schemas=SCHEMAS
+            schemas=getattr(tools, "schemas", SCHEMAS)
         )
 
         usage.append(response.get("usage", {}))

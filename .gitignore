@@ -3,3 +3,7 @@
 __pycache__/
 *.pyc
 eval_results*.json
+/agent_baseline.py
+/agent_cp3_baseline.py
+/eval_before_backup.json
+/eval_before_openrouter_incomplete.json
