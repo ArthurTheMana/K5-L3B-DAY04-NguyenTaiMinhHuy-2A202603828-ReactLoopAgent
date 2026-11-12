@@ -13,4 +13,4 @@ eval_results*.json
 /bonus_b7_fixed.json
 /bonus_b10_retry.json
 /agent_before_bonus.py
-/agent_bonus_13_66.py
+/eval_bonus_13_66.json
