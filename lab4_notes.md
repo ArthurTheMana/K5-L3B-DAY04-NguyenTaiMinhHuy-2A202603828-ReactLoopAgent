@@ -122,9 +122,17 @@ Sau thay đổi, case B7 đạt **100/100** trong lần chạy riêng và tiếp
 
 ### 7.5. Testing
 
-- Main Unit Tests: 37/37 PASS trong lần kiểm tra trước Security Fix.
-- Bonus Unit Tests: 3/3 PASS trong lần kiểm tra trước Security Fix.
-- Bonus Evaluation: 10/10 cases được chấm sau Security Fix.
+Sau khi bổ sung Security Instructions, mình đã kiểm tra lại phiên bản Agent cuối cùng:
+
+- **Main Unit Tests:** 37/37 PASS.
+- **Bonus Unit Tests:** 3/3 PASS.
+- **Main Evaluation (CP3):** 95.36/100, 22/22 cases scored.
+- **Main Evaluation (CP5):** 94.59/100, 22/22 cases scored.
+- **Bonus Evaluation:** 98.70/100, 10/10 cases scored.
+- **Bonus Points:** 14.80/15 (điểm tham khảo).
+- **B7 Prompt Injection:** 100/100 sau Security Fix.
+
+Cả hai bộ Unit Tests đều PASS với phiên bản `agent.py` cuối cùng.
 
 ### 7.6. Remaining Limitations
 
